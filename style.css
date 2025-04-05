@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(45deg, #ffecd2, #fcb69f, #a1c4fd, #c2e9fb);
+    background-size: 400% 400%;
+    animation: gradientMove 15s ease infinite;
+    overflow: hidden;
+    cursor: none;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+  }
+  
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  
+  /* ...keep rest same... */
+.cursor {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: url('https://em-content.zobj.net/thumbs/160/apple/354/cat-face_1f431.png') no-repeat center center;
+    background-size: contain;
+    pointer-events: none;
+    z-index: 1000;
+    transition: transform 0.05s linear;
+  }
+  
+  .game-container {
+    text-align: center;
+    padding-top: 50px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #ff6347;
+  }
+  
+  #score {
+    font-size: 1.5rem;
+    margin: 10px;
+  }
+  
+  .emoji-area {
+    position: relative;
+    height: 80vh;
+  }
+  
+  .emoji {
+    font-size: 2.2rem;
+    position: absolute;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.3s;
+  }
+  
+  .emoji:hover {
+    transform: scale(1.2);
+  }
+  
