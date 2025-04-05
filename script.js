@@ -1,11 +1,11 @@
-// Custom cursor movement
+
 const cursor = document.querySelector(".cursor");
 document.addEventListener("mousemove", (e) => {
   cursor.style.left = e.clientX + "px";
   cursor.style.top = e.clientY + "px";
 });
 
-// Mouse game logic
+
 const emojiArea = document.getElementById("emojiArea");
 const scoreDisplay = document.getElementById("score");
 let score = 0;
@@ -26,7 +26,7 @@ function createMouseEmoji() {
 
   setTimeout(() => {
     emoji.remove();
-  }, 2000); // Mouse escapes in 1 sec
+  }, 2000); 
 }
 
-setInterval(createMouseEmoji, 1200); // New mouse every 1.2s
+setInterval(createMouseEmoji, 1200);
