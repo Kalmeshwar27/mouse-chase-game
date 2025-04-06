@@ -26,7 +26,7 @@ function createMouseEmoji() {
 
   setTimeout(() => {
     emoji.remove();
-  }, 2000); 
+  }, 3000); 
 }
 
 setInterval(createMouseEmoji, 1200);
